@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Alonso Granado's Resume</title>
+    <link rel="stylesheet" href="resume_style.css">
+    <meta name="description" content="Luis Alonso Granado's professional resume and contact information.">
+</head>
+<body>
+  <div class="button-container">
+    <button id= "dl_resume_btn" class="resume-download-btn">Download Resume</button>
+    <button class="comm_btn" id="contactMe">Contact Me</button>
+    <button class="comm_btn" id="submitQuestions">Submit Questions</button>
+  </div>
+
+  <div class="form-backdrop" style="display:none;"></div>
+  <div id="contactForm" class="contact-form">
+    <form action="lagranado@arizona.edu" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit" class="resume-download-btn">Send</button>
+      <button type="button" class="resume-download-btn cancel-btn">Cancel</button>
+    </form>
+  </div>
+
+  <div class="theme-toggle-container">
+    <button class="theme-toggle-btn">Dark/Light Mode</button>
+  </div>
+  <main>
+    <header>
+      <h1>Luis A. Granado</h1>
+      <div class="intro">  
+        <p>Staff Sergeant, AZANG</p>
+        <img src="USAF_Enlisted_Senior_Aircrew_Badge.png" alt="badge" class="badge-icon">
+        <p>Job Title: Sensor Operator</p>
+        <p><img src="US_Air_Force_Logo_Solid_Colour.svg.png" class="email-icon" alt="Air Force Logo">Work Email: <a href="mailto:luis.granado.2@us.af.mil" alt="Email">luis.granado.2@us.af.mil</a></p>
+        <p><img src="Arizona_Wildcats_logo.svg" alt="Univeristy of Arizona Logo" class="email-icon">School Email: <a href="lagranado@arizona.edu" alt="Email">lagranado@arizona.edu</a></p>
+        <p><img src="GitHub_Invertocat_Logo.svg.png" alt="GitHub Logo" class="email-icon">GitHub Profile: <a href="https://github.com/lagranado" alt="GitHub Link">https://github.com/lagranado</a></p>
+      </div>
+    </header>
+
+  <section id="experience">
+    <button class="collapsible"><h2>Military Professional Experience</h2></button>
+    <div class="content">
+      <article>
+          <h3>Primary Role: Sensor Operator (SO), Instructor, Evaluator (K1U071R) - 214th ATKG, Davis Monthan AFB, CAOC | Tucson, AZ</h3>
+          <h4><p>July 12, 2012 – Present</p></h4>
+          <ul> Primary Role Description:
+            <li>NCOIC (Noncommisioned Officer in Charge) of Weapons and Tactics: Maintain, disseminate, and update MQ-9 and Supported Unit(s) Techniques Tactics and Procedures (TTPs).</li>
+            <li>Instruct/Evaluate incoming Initial Qualified SOs and perform flight Evaluator duties.</li>
+            <li>Operational Duties: Perform duties as a mission control element (MCE) SO and co-pilot for the MQ-9A systems.</li>
+          </ul>
+          <h4>Current Additional Duties: Assistant Flight Commander</h4>
+          <p> A-FLT Duties consist of administrative duties for the SOs. Leading, mentoring, and facilitating morale. </p>            
+          <ul> Past Duties:
+            <li>NCOIC (Noncommisioned Officer in Charge) of Weapons and Tactics: Maintain, disseminate, and update MQ-9 and Supported Unit(s) Techniques Tactics and Procedures (TTPs).</li>
+            <li>Lead in the Department of Scheduling in 24/7 Operations.</li>
+
+          </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="education">
+    <button class="collapsible"><h2>Education/Military Training</h2></button>
+    <div class="content">
+      <ul>
+        <li>US Air Force Basic Military Training: March 2013 – May 2013 (Honor Graduate)</li>
+        <li>Air University Associates of Applied Science: Air and Space Operations Technology (Dec 2018)</li>
+        <li>Airman Leadership School (23 Jun 2016)</li>
+        <li>NCO Academy (15 Oct 2021)</li>
+        <li>University of Arizona, Major in Applied Computing and Programming, Senior Status (Present)</li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <button class="collapsible"><h2>Skills/Achievements</h2></button>
+    <div class="content">   
+      <ul>
+        <li>2750+ flight hours in RPA, 190 Instructor Hours, 20 Evaluator Hours.</li>
+        <li>550 Combat Sorties, 260 Support Sorties.</li>
+        <li>10 years experience with RPA aircraft.</li>
+        <li>Proficient in simulator operations, communication, crew resource management, operational risk management, and bilingual (Spanish).</li>
+        <li>Skilled in Microsoft programs for briefings, schedules, and trackers.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="references">
+    <button class="collapsible"><h2>Character References</h2></button>
+    <div class="content">
+      <ul>
+        <li>Benjamin DeLaCruz III, Maj, USAF, 214 Attack Squadron, Pilot - Cell: <a href="tel:+12198806342">219-880-6342</a></li>
+        <li>Kyle V. Strathman, Maj, AZANG, 214 ATKS C-Flight/CC, Pilot - Cell: <a href="tel:+18067869227">806-786-9227</a></li>
+        <li>James Vanwinkle (Retired), Senior Master Sergeant Sensor Operator at the 214th ATKS, General Atomics - Phone: <a href="tel:+16237605071">623-760-5071</a></li>
+      </ul>
+    </div>
+  </section>
+
+  </main>
+
+</body>
+<script src="resume_script.js"></script>
+</html>

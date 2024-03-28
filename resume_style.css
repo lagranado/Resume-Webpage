@@ -1,0 +1,188 @@
+:root {
+  --dark-bg-color: #334050;
+  --dark-text-color: #334050;
+  --light-bg-color: #d6d9dc;
+  --light-text-color: #334050;
+  --link-color: #007bff;
+  --link-dark-color: #4e9af1
+}
+
+body {
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-text-color);
+}
+
+.dark-mode header a {
+  color: var(--link-dark-color);
+}
+
+.theme-toggle-btn {
+  background-color: #adb3b9;
+  padding: 8px 8px;
+  cursor: pointer;
+  margin: 5px auto;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); 
+  text-decoration: none; 
+  transition: background-color 0.3s; 
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: calc(100% - 40px); 
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 10px 20px; 
+  display: block; 
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.email-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 35px;
+  height: 25px; 
+}
+
+.badge-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 150px;
+  height: 50px; 
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.theme-toggle-container {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  padding-right: 30px;
+}
+
+header h1 {
+  background: linear-gradient(to right, #a8a8a8, #d6d9dc);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  background: linear-gradient(to right, #a8a8a8, #b0c5db);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+h2, h3, p, li, a {
+  color: inherit; 
+}
+
+ul {
+  list-style-type: none; 
+}
+
+a {
+  text-decoration: none;
+  color: #334050; 
+}
+
+.download-container {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.resume-download-btn {
+  display: inline-block; 
+  background-color: #2e4045; 
+  color: white; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  font-size: 18px; 
+  text-decoration: none; 
+  transition: background-color 0.3s; 
+}
+
+.comm_btn {
+  display: inline-block; 
+  background-color: #2e4045; 
+  color: white; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  font-size: 18px; 
+  text-decoration: none; 
+  transition: background-color 0.3s; 
+}
+
+.resume-download-btn:hover, .resume-download-btn:focus, .comm_btn:hover, .comm_btn:focus {
+  background-color: #005b96; 
+}
+
+.download-container {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  margin: 40px;
+}
+
+.contact-form {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; 
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 90%; 
+  max-width: 500px; 
+  display: none; 
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box; 
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+
